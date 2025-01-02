@@ -207,7 +207,6 @@ def lend(sym: str=""):
 
 
 #test
-lend()
 lappend(DEBUG, "logger by Pe2h334")
 lmessage("version: a2.2")
 lend("#")
