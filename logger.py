@@ -19,14 +19,14 @@ FILE_NAME = "log.log"
 
 
 #config
-lcfg = "t"
+ltime = False
 """
 must be:
 
-    lcfg = None
+    ltime = False
         log with level, but without time
 
-    lcfg = "t"
+    ltime = True
         log with level and time
 
 """
@@ -46,7 +46,7 @@ def lwrite(level, message: str):
     try:
 
         if level == INFO or level == WARNING or level == DEBUG or level == CRITICAL:
-            if lcfg == "t":
+            if ltime:
                 with open(FILE_NAME, 'w', encoding='utf-8') as ft:
                     ft.write(f"[{data}]")
                     ft.write("::")
@@ -64,7 +64,7 @@ def lwrite(level, message: str):
                     print(f"your message['{message}'] overwrite in {FILE_NAME}")
 
         else:
-            if lcfg == "t":
+            if ltime:
 
                 with open(FILE_NAME, 'a', encoding='utf-8') as ftl:
                     ftl.write("\n")
@@ -104,7 +104,7 @@ def lappend(level, message: str):
 
         if level == INFO or level == WARNING or level == DEBUG or level == CRITICAL:
 
-            if lcfg == "t":
+            if ltime:
 
                 with open(FILE_NAME, 'a', encoding='utf-8') as ft:
                     ft.write("\n")
@@ -125,7 +125,7 @@ def lappend(level, message: str):
                     print(f"your message['{message}'] add in {FILE_NAME}")
 
         else:
-            if lcfg == "t":
+            if ltime:
 
                 with open(FILE_NAME, 'a', encoding='utf-8') as ftl:
                     ftl.write("\n")
