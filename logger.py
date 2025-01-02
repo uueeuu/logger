@@ -19,7 +19,7 @@ FILE_NAME = "log.log"
 
 
 #config
-ltime = False
+ltime = True
 """
 must be:
 
@@ -207,6 +207,6 @@ def lend(sym: str=""):
 
 
 #test
-lappend(DEBUG, "logger by Pe2h334")
-lmessage("version: a2.2")
+lappend(DEBUG, "logger by uueeuu")
+lmessage("version: a2.5")
 lend("#")
