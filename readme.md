@@ -3,6 +3,14 @@ Logger
 
 Logger is a simple Python library for writing to .log files
 
+# How it look?
+
+DEBUG::logger by uueeuu
+
+if time = True
+
+[2025-01-02 20:27:04.673258]::DEBUG::logger by uueeuu
+
 How to import in my project?
 ===========
 
@@ -14,7 +22,7 @@ How to import in my project?
 ____
 
 ```Python
-from log_edit import *
+from logger import *
 
 lwrite(INFO, "hi")
 #write "hi" -> log.log
