@@ -1,7 +1,7 @@
 Logger
 ===========
 
-logger is a simple Python library for writing to .log files
+Logger is a simple Python library for writing to .log files
 
 How to import in my project?
 ===========
@@ -32,7 +32,7 @@ Logger has five functions:
 * lclear
 * lend
 
-let's look at each function
+Let's look at each function
 
 ### lwrite()
 
@@ -45,7 +45,7 @@ lwrite(level, message)
 ```
 
 level - log level
-there are 3 log levels:
+There are 5 log levels:
 
 _____
 
@@ -59,7 +59,7 @@ _____
 
 In level you need to write one of them or you get error
 
-example:
+Example:
 
 ```Python
 lwrite(INFO, "hello world!")
@@ -81,7 +81,7 @@ message - your log message
 
 _____
 
-example:
+Example:
 
 ```Python
 lappend(CRITICAL, "FATAL ERROR")
@@ -102,7 +102,7 @@ message - your message that needs to be sent to the .log
 
 _____
 
-example:
+Example:
 
 ```Python
 lmessage("fuxking russian kid")
@@ -115,7 +115,7 @@ just clear log file
 
 ### lend()
 
-make separation with(or without) symbols
+Make separation with(or without) symbols
 
 ##### syntax:
 
@@ -131,7 +131,7 @@ _____
 _____
 ## Time
 
-if you need time in log make this steps
+If you need time in log make this steps
 
 * Open `logger.py`
 * Change `Time` from False -> True
@@ -140,9 +140,9 @@ _____
 
 ## File name
 
-default file name is `log.log`, logger create this file if it dont exists.
+Default file name is `log.log`, logger create this file if it dont exists.
 If you rename `log.log` -> `$random_name.log` then logger create new file log.log and all entries will writing in new `log.log`
-but you can change default file name, for this you need:
+But you can change default file name, for this you need:
 
 * Open `logger.py`
 * Change `FILE_NAME` from `log.log` -> `coolname.log`
