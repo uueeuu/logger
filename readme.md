@@ -142,7 +142,7 @@ _____
 If you need time in log make this steps
 
 * Open `logger.py`
-* Change `Time` from False -> True
+* Change `ltime` from False -> True
 
 _____
 
