@@ -18,7 +18,7 @@ ERROR = "ERROR"
 FILE_NAME = "log.log"
 
 
-#config
+#time
 ltime = True
 """
 must be:
@@ -146,7 +146,7 @@ def lappend(level, message: str):
                     print(f"error 1: {level} != log level. Fix this end restart programm")
 
     except TypeError:
-        with open(FILE_NAME, 'a', encoding='utf-8') as fTE:           
+        with open(FILE_NAME, 'a', encoding='utf-8') as fTE:         
             fTE.write(f"error 3: message == {message} != str. Fix and restart programm")
             print(f"error 3: message == {message} != str. Fix and restart programm")
 
@@ -208,5 +208,6 @@ def lend(sym: str=""):
 
 #test
 lappend(DEBUG, "logger by uueeuu")
+lappend(INFO, 123)
 lmessage("version: a2.5")
 lend("#")
